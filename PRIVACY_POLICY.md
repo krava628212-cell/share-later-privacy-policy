@@ -1,86 +1,69 @@
-# Политика конфиденциальности приложения «Поделиться позже»
+# Privacy Policy for Share Later
 
-**Дата вступления в силу:** 18 ноября 2026 года  
-**Последнее обновление:** 18 ноября 2026 года
+**Effective date:** November 18, 2026  
+**Last updated:** November 18, 2026
 
-## 1. Общие положения
+## 1. Overview
 
-Приложение «Поделиться позже» (далее — «Приложение») помогает сохранить ссылку или текст и напомнить пользователю о необходимости поделиться ими позднее.
+Share Later helps you save a link or text and reminds you to share it later.
 
-Разработчик: владелец репозитория [krava628212-cell/share-later](https://github.com/krava628212-cell/share-later).  
-Контакт для вопросов о конфиденциальности: [GitHub-профиль разработчика](https://github.com/krava628212-cell).
+The app is designed for local use on Android. It does not require registration or an account and does not operate its own server, advertising analytics, or cloud synchronization service.
 
-Приложение предназначено для локального использования на устройстве Android. В Приложении нет регистрации, пользовательских аккаунтов, собственного сервера, рекламной аналитики и облачной синхронизации.
+## 2. Data processed by the app
 
-## 2. Какие данные обрабатываются
+Depending on your actions, Share Later may process:
 
-В зависимости от действий пользователя Приложение может обрабатывать:
+- links and text received through Android Share or entered manually;
+- local reminder records, including content, selected app, creation time, scheduled time, status, and selected recipient;
+- a recipient name, phone number, Telegram username, or Instagram username when you save a recipient;
+- app settings such as language, theme, and reminder delays;
+- the local notification-permission state;
+- a link temporarily placed in the clipboard before opening Instagram.
 
-- ссылки и текст, переданные через системную функцию Android «Поделиться» или введённые вручную;
-- локальные записи напоминаний: текст, выбранный мессенджер, время создания, запланированное время, статус записи и выбранный получатель;
-- имя, номер телефона, Telegram username или Instagram username получателя, если пользователь добавляет их в избранные получатели;
-- настройки приложения, включая язык, тему и задержки напоминаний;
-- локальный статус разрешения на уведомления;
-- ссылку, временно помещённую в буфер обмена перед открытием Instagram.
+The app does not request or process passwords, messenger tokens, chat contents, photos, videos, microphone data, location data, or payment information.
 
-Приложение не запрашивает и не обрабатывает пароли, токены мессенджеров, содержимое переписки, фотографии, видео, микрофон, геолокацию или платёжные данные.
+## 3. Device contacts
 
-## 3. Контакты устройства
+If you explicitly choose contact search, Android may provide access to your address book through the `READ_CONTACTS` permission.
 
-Если пользователь явно выбирает функцию поиска получателя в контактах, Android может предоставить Приложению доступ к телефонной книге через разрешение `READ_CONTACTS`.
+Contacts are used only to display a matching name and number and to fill in the recipient form. The app does not upload, sell, share, or use your address book for advertising. You may deny or revoke this permission in Android settings; manual recipient entry remains available.
 
-Контакты используются только для отображения найденного имени и номера и для заполнения формы получателя. Приложение не загружает телефонную книгу на сервер, не продаёт её, не передаёт её разработчику и не использует её для рекламы.
+## 4. Local storage
 
-Пользователь может отказать в разрешении или отозвать его в настройках Android. В этом случае ручное добавление получателя остаётся доступным.
+Reminders, recipients, and settings are stored locally in the app's SQLite database on your device. Share Later has no cloud synchronization and does not maintain a server-side backup. Android may remove local data when the app's data is cleared or the app is uninstalled.
 
-## 4. Где хранятся данные
+Phone numbers and usernames can be personal data. Add only information that you are permitted to process and share.
 
-Записи напоминаний, получатели и настройки хранятся локально в закрытой базе SQLite приложения на устройстве пользователя.
+## 5. Notifications
 
-Приложение не выполняет облачную синхронизацию и не создаёт резервные копии данных на собственном сервере. При удалении Приложения локальные данные могут быть удалены Android вместе с данными Приложения.
+Reminders use Android local notifications and are scheduled on the device. If notification permission is not granted, records may still be saved locally but notifications will not be shown. You can change this permission in Android settings.
 
-Номера телефонов и usernames являются персональными данными. Пользователь должен добавлять только те данные, для обработки которых у него есть законное основание и необходимое согласие.
+## 6. Sharing with third-party apps
 
-## 5. Уведомления
+When you open a reminder, Share Later passes the link or text to the selected app, such as WhatsApp, Telegram, or Instagram, using standard Android intents, links, and clipboard operations.
 
-Для напоминаний Приложение использует локальные уведомления Android. Уведомления планируются и обрабатываются на устройстве.
+Further processing is controlled by the third-party app's own privacy policy. Share Later cannot read your chats and cannot verify whether a message was sent. You must confirm the final send action in the third-party app.
 
-Если разрешение на уведомления отсутствует, ссылки и записи могут сохраняться локально, но уведомление не будет показано. Разрешение можно изменить в системных настройках Android.
+## 7. Network access and analytics
 
-## 6. Передача данных сторонним приложениям
+Share Later does not operate its own server, send saved links, phone numbers, or usernames to the developer, or use advertising SDKs, profiling, or third-party analytics. Network activity may occur in Android or in a third-party app after you open a link or pass data through Android Share.
 
-Когда пользователь нажимает кнопку открытия отправки, Приложение передаёт ссылку или текст выбранному приложению, например WhatsApp, Telegram или Instagram, используя стандартные Android intents, ссылки и буфер обмена.
+## 8. Deleting data
 
-После передачи дальнейшая обработка данных выполняется соответствующим сторонним приложением по его собственной политике конфиденциальности. Приложение «Поделиться позже» не получает доступ к переписке и не может подтвердить, было ли сообщение отправлено.
+You can delete individual reminders, cancel notifications, and remove saved recipients in the app. To remove all local data, clear the app data or uninstall the app through Android settings. Because there is no account or server-side storage, no separate account-deletion procedure is required.
 
-Пользователь сам подтверждает окончательную отправку сообщения в стороннем приложении.
+## 9. Security
 
-## 7. Сетевые запросы и аналитика
+Data is stored in the app's private Android storage. You are responsible for protecting your device, screen lock, and permissions granted to other apps. No storage method can guarantee absolute security if the device itself is compromised.
 
-Собственный сервер Приложения отсутствует. Приложение не отправляет сохранённые ссылки, номера телефонов или usernames разработчику и не использует рекламные SDK, профилирование или стороннюю аналитику.
+## 10. Children
 
-Сетевые действия могут выполняться самим Android или сторонними приложениями после того, как пользователь открыл ссылку или передал данные через системный intent.
+Share Later is not specifically directed to children and does not knowingly collect children's data. Do not add another person's data without an appropriate legal basis or consent.
 
-## 8. Удаление данных
+## 11. Changes to this policy
 
-Пользователь может удалить отдельные записи, отменить напоминания и удалить сохранённых получателей внутри Приложения. Полное удаление локальных данных выполняется удалением данных Приложения или удалением самого Приложения через настройки Android.
+If the app's functionality or data practices change, this policy will be updated. The latest update date appears at the top of this page.
 
-Поскольку аккаунта и серверного хранилища нет, отдельная процедура удаления аккаунта не требуется.
+## 12. Contact
 
-## 9. Безопасность
-
-Данные хранятся в закрытом хранилище Приложения и доступны штатным механизмам Android. Пользователь отвечает за защиту устройства, экранную блокировку и разрешения других приложений.
-
-Несмотря на разумные меры защиты, ни один способ хранения данных не гарантирует абсолютную безопасность при компрометации самого устройства.
-
-## 10. Дети
-
-Приложение не предназначено специально для детей и не собирает данные детей намеренно. Не добавляйте в Приложение данные другого человека без соответствующего основания или согласия.
-
-## 11. Изменения политики
-
-При изменении функциональности или способов обработки данных эта политика будет обновлена. Дата последнего обновления указана в начале документа.
-
-## 12. Контакты
-
-Вопросы о конфиденциальности можно направить через [GitHub-профиль разработчика](https://github.com/krava628212-cell) или раздел Issues репозитория, если он доступен пользователю.
+For privacy questions, contact [krava628212@gmail.com](mailto:krava628212@gmail.com) or visit the [developer's GitHub profile](https://github.com/krava628212-cell).
